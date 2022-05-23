@@ -10,6 +10,7 @@ var cBtn = document.querySelectorAll('.cBtn');
 				var currBtn = event.currentTarget;
 				var btns = document.querySelectorAll(`.cBtn:nth-child(${i+1})> .btn`);
 				var elemCount = btns.length;
+				currBtn.classList.toggle('active');
 				if(++cbtnArr[i]%2){
 					btns.forEach((bt, j)=>{
 						var rot = 360 / elemCount * j;
